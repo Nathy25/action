@@ -1,0 +1,24 @@
+name: Hola Mundo
+
+on: push
+
+jobs:
+    hola:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              run: |
+                echo "Hola mundo"
+                echo "Nathy is 33 years old and lives in Rosario."
+               
+            - name: Touch file
+              run: touch hola.txt
+
+
+
+
+    other: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: ls
+              run: ls -al
